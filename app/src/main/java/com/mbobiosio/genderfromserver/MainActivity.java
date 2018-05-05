@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
-public class SecondActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
 
     private static final String ID = "identifier";
@@ -72,7 +72,7 @@ public class SecondActivity extends AppCompatActivity {
                         @Override
                         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                             DataObject selectedGender = genderList.get(position);
-                            Toast.makeText(SecondActivity.this, "selected: " + selectedGender.getName() + "with id number of: " + id, Toast.LENGTH_LONG).show();
+                            Toast.makeText(MainActivity.this, "selected: " + selectedGender.getName() + "with id number of: " + id, Toast.LENGTH_LONG).show();
                         }
 
                         @Override
